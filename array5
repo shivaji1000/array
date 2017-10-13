@@ -1,0 +1,37 @@
+#include<iostream>
+#include<conio.h>
+using namespace std;
+
+class stating {
+    int code;
+    static int cot;
+
+public:
+   stating()
+    {
+        code = ++cot;
+    }
+
+    void showcode() {
+        cout << "\n\tObject number is :" << code;
+    }
+
+    void showcount() {
+        cout << "\n\tCount Objects :" << cot;
+    }
+};
+
+int stating::cot;
+
+int main() {
+
+    stating obj1, obj2,obj3;
+
+    obj1.showcount();
+    obj1.showcode();
+    obj2.showcount();
+    obj2.showcode();
+    obj3.showcount();
+    obj3.showcode();
+    getch();
+}
