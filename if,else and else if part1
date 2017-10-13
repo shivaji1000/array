@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+using namespace std;
+
+void main()
+{
+cin>>year;
+if(year%400==0)
+cout<<"leap_year_it_is";
+if(year%100==0)
+cout<<"not a leap_year";
+if(year%4==0)
+cout<<"leap_year_it_is";
+}
