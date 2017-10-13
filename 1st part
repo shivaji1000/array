@@ -1,0 +1,51 @@
+#include<iostream>
+using namespace std;
+
+int main()
+{int i,n,a[100];
+ int smallest=a[0];
+ int largest=a[0];
+    cin>>n;
+    for(i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    for(i=0;i<n;i++)
+    {
+        cout<<a[i]<<endl;
+    }
+    //smallest element in an array
+   /* for(i=0;i<n;i++)
+    {
+        if(a[i]<smallest)
+        {
+           smallest=a[i];
+        }
+
+    }
+    cout<<smallest<<endl;
+    */
+//largest element in an array
+   /* for(i=1;i<n;i++)
+    {
+        if(a[i]>largest)
+        {
+            largest=a[i];
+        }
+    }
+    cout<<largest;
+    */
+    int key;
+     cin>>key;
+    for(i=0;i<n;i++)
+    {
+        if(a[i]==key)
+        {
+            cout<<"found";
+        }
+        else
+        {
+            cout<<"not found";
+        }
+    }
+}
